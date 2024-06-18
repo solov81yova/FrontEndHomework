@@ -1,0 +1,22 @@
+body {
+    background-color: beige; 
+}
+
+.name-application {
+    font-size: 27px;
+}
+
+#orange-button {
+    background-color: orangered;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    padding: 3px 3px;
+    border-radius: 3px;
+}
+
+.input {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 18px;
+    color: #000;
+}
