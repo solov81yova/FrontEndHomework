@@ -22,9 +22,9 @@ const btnClickHandler = () => {
     let result = ' ';
     if (bodyMassIndex < 18.5) {
         result = 'Underweight';
-    } else if (bodyMassIndex >= 18.5 && bodyMassIndex < 24.9) {
+    } else if (bodyMassIndex < 24.9) {
         result = 'Normal weight. Our congratulations!';
-    } else if (bodyMassIndex >= 25 && bodyMassIndex < 29.9) {
+    } else if (bodyMassIndex < 29.9) {
         result = 'Overweight';
     } else {
         result = 'Obese';
