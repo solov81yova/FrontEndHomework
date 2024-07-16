@@ -1,0 +1,28 @@
+/*В домашнем каталоге(~) создайте папку bands
+Внутри папки bands создайте папку beatles
+Внутри beatles создайте файлы:
+lennon.json
+mccartney.json
+ringo.json
+harrison.json
+Добавьте в каждый файл json информацию по формату: { “name”: “Paul McCartney”, “instrument”: “bass” }
+Создайте еще одну папку в bands и назвите ее wings - переместите Маккартни в папку wings из битлов.
+Затем удалим lennon.json и harrison.json
+Проверка ДЗ - пришлите файл bands.txt, в котором по порядку прописанны все команды, которые вы 
+использовали для выполнения данного задания
+*/
+
+mkdir ~/bands
+cd ~/bands
+mkdir beatles
+cd beatles
+touch lennon.json mccartney.json ringo.json harrison.json
+echo '{ "name": "John Lennon", "instrument": "vocals" }' > lennon.json
+echo '{ "name": "Paul McCartney", "instrument": "bass" }' > mccartney.json
+echo '{ "name": "Ringo Starr", "instrument": "drums" }' > ringo.json
+echo '{ "name": "George Harrison", "instrument": "guitar" }' > harrison.json
+cd ..
+mkdir wings
+mv beatles/mccartney.json wings/
+rm beatles/lennon.json beatles/harrison.json
+tree ~/bands
